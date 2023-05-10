@@ -13,7 +13,7 @@ No exemplo a seguir será criado uma VM no VirtualBox, que terá a seguinte iden
 
 Tudo que for implementado ou criado na pasta raiz desse tutorial, já ficará disponível dentro do diretório da VM em:
 
-/home/vagrant/projeto
+**/home/vagrant/projeto**
 
 ### Requisitos mínimos
 
@@ -60,7 +60,7 @@ Ainda dentro do **Vagrantfile**, criaremos um apontamento para o arquivo **scrip
 
 Conteúdo completo arquivo Vagrantfile
 
-https://github.com/tiagotsc/vagrant-minikube/blob/948079cecfa86fa6db65e72b2cc1b4a8ae9a2567/script.sh#L1-L61
+https://github.com/tiagotsc/vagrant-docker/blob/dc18f7765c5db9783850005edb3ae536adff078c/Vagrantfile#L1-L61
 
 Depois de tudo configurado, salve o arquivo.
 
@@ -70,7 +70,7 @@ Depois de tudo configurado, salve o arquivo.
 
 E coloque o seguinte conteúdo:
 
-https://github.com/tiagotsc/vagrant-minikube/blob/948079cecfa86fa6db65e72b2cc1b4a8ae9a2567/script.sh#L1-L17
+https://github.com/tiagotsc/vagrant-docker/blob/dc18f7765c5db9783850005edb3ae536adff078c/script.sh#L1-L17
 
 Depois de inserir o conteúdo, salve o arquivo.
 
