@@ -38,6 +38,12 @@ Abaixo de cada um segue o link para download.
 
   vagrant plugin install vagrant-vbguest
 
+### Observação
+
+Vagrant só é recomendado para ambientes de testes e desenvolvimento, conforme pode ser visto no link abaixo.
+
+https://developer.hashicorp.com/vagrant/intro/vs/terraform
+
 ### Siga as etapas
 
 1 - Crie uma pasta com nome de sua preferência em qualquer lugar do seu SO. No meu caso vou chama lá de “**projeto**” e dentro dela crie um arquivo chamado **Vagrantfile**, sem extensão.
