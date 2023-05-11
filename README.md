@@ -15,6 +15,10 @@ Tudo que for implementado ou criado na pasta raiz desse tutorial, já ficará di
 
 **/home/vagrant/projeto**
 
+### Versões de softwares utilizados nesse tutorial
+
+SO Windows 11, Vagrant 2.3.3 e VirtualBox 7.0.6
+
 ### Requisitos mínimos
 
 Ter em seu SO os seguintes softwares.
