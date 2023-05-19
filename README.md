@@ -118,9 +118,9 @@ docker compose version
 
 ### Alguns comandos úteis
 
-Via linha de comando, é preciso estar na pasta "**projeto**", pasta onde está o **Vagrantfile**,  para executar os comandos:
-
 ```bash
+##### VAGRANT - é preciso estar na pasta que contém o Vagrantfile #####
+
 # Liga VM, ou cria, caso ainda não exista
 vagrant up
 
@@ -135,9 +135,20 @@ vagrant destroy
 
 # Destrói a VM sem perguntar
 vagrant destroy -f
+
+##### DOCKER #####
+
+# Listar redes
+docker network ls
+
+# Listar containers parados e em execução
+docker container ls -a
+
+# Listar imagens
+docker image ls
 ```
 
-Todo o tutorial aplicado aqui, já se encontra pronto para uso nesse repositório, basta clonar e subir o ambiente.
+Todo o tutorial aplicado aqui, já se encontra pronto para uso nesse repositório, se você tiver em seu SO o **Vagrant** e **VirtualBox**, basta clonar e subir o ambiente.
 
 #### Documentação oficial do Vagrant
 
