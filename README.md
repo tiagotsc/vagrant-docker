@@ -1,9 +1,11 @@
 ﻿
 ## Vagrant - Provisionando ambiente Docker
 
-Será criado de forma rápida e objetiva uma VM com Docker pronto para uso no CentOS 7. 
+Passo a passo de como subir uma VM com Docker pronto para uso no CentOS 7.
 
 Inclusive já será feito uma mapeamento entre a pasta host e vm.
+
+Ótima para quem deseja subir um ambiente rápido e isolado da host.
 
 No exemplo a seguir será criado uma VM no VirtualBox, que terá a seguinte identificação:
 
