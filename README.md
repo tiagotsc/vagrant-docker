@@ -5,6 +5,8 @@ Será criado de forma rápida e objetiva uma VM com Docker pronto para uso no Ce
 
 Inclusive já será feito uma mapeamento entre a pasta host e vm.
 
+Ótima para quem deseja subir um ambiente rápido e isolado da host.
+
 No exemplo a seguir será criado uma VM no VirtualBox, que terá a seguinte identificação:
 
 | Hostname   | IP       |
