@@ -72,7 +72,7 @@ Ainda dentro do **Vagrantfile**, criaremos um apontamento para o arquivo **scrip
 
 Conteúdo completo arquivo Vagrantfile
 
-https://github.com/tiagotsc/vagrant-docker/blob/dc18f7765c5db9783850005edb3ae536adff078c/Vagrantfile#L1-L61
+https://github.com/tiagotsc/vagrant-docker/blob/d253e118f8adee22977d9d1c05bd22feb8da3b01/Vagrantfile#L1-L65
 
 Depois de tudo configurado, salve o arquivo.
 
@@ -82,7 +82,7 @@ Depois de tudo configurado, salve o arquivo.
 
 E coloque o seguinte conteúdo:
 
-https://github.com/tiagotsc/vagrant-docker/blob/dc18f7765c5db9783850005edb3ae536adff078c/script.sh#L1-L17
+https://github.com/tiagotsc/vagrant-docker/blob/d253e118f8adee22977d9d1c05bd22feb8da3b01/script.sh#L1-L18
 
 Depois de inserir o conteúdo, salve o arquivo.
 
