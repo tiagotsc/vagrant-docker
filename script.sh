@@ -1,3 +1,7 @@
+# Configura acesso a internet
+sudo echo 'DNS1=8.8.8.8' >> /etc/sysconfig/network-scripts/ifcfg-eth1
+sudo echo 'DNS2=8.8.4.4' >> /etc/sysconfig/network-scripts/ifcfg-eth1
+sudo systemctl restart NetworkManager
 # Desativando firewall
 sudo systemctl stop firewalld
 sudo systemctl disable firewalld
@@ -5,9 +9,6 @@ sudo systemctl mask --now firewalld
 # Desativando Selinux
 sudo sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
 sudo setenforce 0
-sudo yum check-update
-# Instalação do memcached. É utilizado pelo kubectl
-sudo yum install memcached -y
 # Instalação do Docker
 curl -fsSL https://get.docker.com/ | sh
 sudo systemctl start docker

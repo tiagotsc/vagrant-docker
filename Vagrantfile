@@ -1,8 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby  :
 
+# VERSÃO DO VirtualBox-7.0.10 USADA
 machines = {
-  "docker"   => {"memory" => "6144", "cpu" => "4", "ip" => "150", "image" => "centos/7"}
+  "docker"   => {"memory" => "6144", "cpu" => "4", "ip" => "150", "image" => "generic/centos9s"}
 }
 
 Vagrant.configure("2") do |config|
@@ -19,6 +20,7 @@ Vagrant.configure("2") do |config|
   # É previso instalar o plugin no HOST "vagrant plugin install vagrant-vbguest"
   # Se tiver algum problema é possível desistalar no HOST através de "vagrant plugin uninstall vagrant-vbguest"
   # Habilita instalação do vbguest na VM do virtualbox
+  config.vbguest.auto_update = false
   config.vbguest.installer_options = { allow_kernel_upgrade: true }
   # Configura o compartilhamento da pasta raiz do vagrant do HOST com a VM
   config.vm.synced_folder ".", "/home/vagrant/projeto"
@@ -35,7 +37,9 @@ Vagrant.configure("2") do |config|
       # Crie uma rede pública, que geralmente corresponda à rede em ponte.
       # As redes em ponte fazem com que a máquina apareça como outro dispositivo físico na
       # sua rede.
-      # machine.vm.network "public_network", ip: "192.168.0.#{conf["ip"]}"
+      #machine.vm.network "public_network", bridge: "ASIX USB to Gigabit Ethernet Family Adapter", ip: "192.168.0.#{conf["ip"]}"
+	    #machine.vm.network "public_network", bridge: "Intel(R) Wi-Fi 6 AX200 160MHz", ip: "192.168.0.#{conf["ip"]}"
+	    #machine.vm.network "public_network", ip: "192.168.0.#{conf["ip"]}"
       machine.vm.provider "virtualbox" do |vb|
 	    # Nome VM
         vb.name = "#{name}"

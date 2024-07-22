@@ -1,7 +1,7 @@
 ﻿
 ## Vagrant - Provisionando ambiente Docker
 
-Será criado de forma rápida e objetiva uma VM com Docker pronto para uso no CentOS 7. 
+Será criado de forma rápida e objetiva uma VM com Docker pronto para uso no CentOS 9. 
 
 Inclusive já será feito uma mapeamento entre a pasta host e vm.
 
@@ -9,7 +9,7 @@ No exemplo a seguir será criado uma VM no VirtualBox, que terá a seguinte iden
 
 | Hostname   | IP       |
 | :---------- | :--------- |
-| minikube | 192.168.56.150 |
+| docker | 192.168.56.150 |
 
 Tudo que for implementado ou criado na pasta raiz desse tutorial, já ficará disponível dentro do diretório da VM em:
 
@@ -17,7 +17,7 @@ Tudo que for implementado ou criado na pasta raiz desse tutorial, já ficará di
 
 ### Versões de softwares utilizados nesse tutorial
 
-SO Windows 11, Vagrant 2.3.3 e VirtualBox 7.0.6
+SO Windows 11, Vagrant 2.4.1 e VirtualBox 7.0.10
 
 ### Requisitos mínimos
 
@@ -56,7 +56,7 @@ https://developer.hashicorp.com/vagrant/intro/vs/terraform
 
 2 - O arquivo **Vagrantfile** terá algumas configurações pontuais para nossa única VM.
 
-- **SO:** CentOS 7
+- **SO:** CentOS 9
 - **Hostname:** docker
 - **IP:** 192.168.56.150
 - **CPU:** 4
@@ -108,9 +108,9 @@ O processo demora um pouco e todos os passos que são executados podem ser acomp
 Na figura abaixo, já estando logado na VM, é possível ver a versão do Docker e Docker Compose já pronto para uso.
 
 ```bash
-# Ver versão do Docker
+# Versão do Docker
 docker version
-# Ver versão do kubectl
+# Versão do compose
 docker compose version
 ```
 
