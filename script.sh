@@ -16,3 +16,7 @@ sudo systemctl enable docker
 sudo usermod -aG docker vagrant
 newgrp docker
 sudo curl https://raw.githubusercontent.com/docker/machine/v0.16.0/contrib/completion/bash/docker-machine.bash -o /etc/bash_completion.d/docker-machine
+# Tirando limitador do SO para execução do Docker sem erro durante criação dos containers
+sudo sed -i 's/dockerd -H/dockerd --default-ulimit nofile=65536:65536 -H/g' /usr/lib/systemd/system/docker.service
+sudo systemctl daemon-reload
+sudo systemctl restart docker
